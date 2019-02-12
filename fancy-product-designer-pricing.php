@@ -2,7 +2,7 @@
 /*
 Plugin Name: HYP Designer Pricing
 Plugin URI: https://github.com/hypericumimpex/hyp-designer-priceing/
-Description: An Add-On for Fancy Product Designer that helps to create pricing rules.
+Description: HYP Designer - Preturi si reguli de aplicate a preturilor...
 Version: 1.0.6
 Author: Romeo C.
 Author URI: https://github.com/hypericumimpex/
