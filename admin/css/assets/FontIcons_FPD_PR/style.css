@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'FontIcons_FPD_PR';
+  src:
+    url('fonts/FontIcons_FPD_PR.ttf?gt9cuq') format('truetype'),
+    url('fonts/FontIcons_FPD_PR.woff?gt9cuq') format('woff'),
+    url('fonts/FontIcons_FPD_PR.svg?gt9cuq#FontIcons_FPD_PR') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="fpd-pr-builder-icon-"], [class*=" fpd-pr-builder-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'FontIcons_FPD_PR' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fpd-pr-builder-icon-close:before {
+  content: "\e903";
+}
+.fpd-pr-builder-icon-arrow-left:before {
+  content: "\e901";
+}
+.fpd-pr-builder-icon-arrow-down:before {
+  content: "\e902";
+}
+.fpd-pr-builder-icon-drag-handle:before {
+  content: "\e900";
+}

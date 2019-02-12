@@ -1,0 +1,210 @@
+@import "assets/FontIcons_FPD_PR/style.css";
+@borderColor: #e5e5e5;
+
+#fpd-pricing-rules-wrapper {
+	margin-top: 20px;
+}
+
+.fpd-pr-group {
+	float: left;
+	width: 450px;
+	max-width: 100%;
+	padding: 0 !important;
+	margin: 0 20px 20px 0 !important;
+}
+
+.fpd-panel-header {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	font-weight: bold;
+	background: #f6f6f6;
+	border-bottom: 1px solid @borderColor;
+}
+
+.fpd-pr-group-actions {
+	float: right;
+}
+
+.fpd-pr-group-actions > span {
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.fpd-pr-group.fpd-closed .fpd-panel-body {
+	display: none;
+}
+
+.fpd-pr-group .fpd-pr-builder-icon-arrow-left {
+	display: none;
+}
+
+.fpd-pr-group.fpd-closed .fpd-pr-builder-icon-arrow-down {
+	display: none;
+}
+
+.fpd-pr-group.fpd-closed .fpd-pr-builder-icon-arrow-left {
+	display: inline;
+}
+
+.fpd-panel-body {
+	padding: 10px;
+}
+
+.fpd-panel-body > div {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.fpd-pr-group-body label {
+	position: relative;
+	text-align: center;
+	display: block;
+	color: #8e8e8e;
+	font-weight: 100;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	z-index: 0;
+}
+
+.fpd-pr-group-body label:before {
+	content: "";
+	border-bottom: 1px solid @borderColor;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	z-index: -1;
+}
+
+.fpd-pr-group-body label span {
+	z-index: 2;
+	background: #fff;
+	padding: 0 6px;
+}
+
+.fpd-pr-group-body label span .fpd-pr-tooltip {
+	font-size: 14px;
+	vertical-align: text-top;
+}
+
+.fpd-pr-group-body select,
+.fpd-pr-group-body input[type="number"],
+.fpd-pr-group-body input[type="text"] {
+	background: #f9f9f9;
+	padding: 8px;
+	margin: 0 !important;
+	font-size: 12px;
+	height: 35px;
+	width: 100%;
+	box-shadow: none;
+	border: 1px solid @borderColor;
+	border-radius: 5px;
+}
+
+.fpd-pr-targets > div {
+	width: 49%;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.fpd-pr-targets input[type="text"] {
+	margin-top: 10px !important;
+}
+
+.fpd-pr-match {
+	padding-bottom: 10px;
+}
+
+.fpd-pr-match > span:last-child {
+	margin-left: 20px;
+}
+
+.fpd-pr-match input {
+	margin-right: 5px;
+}
+
+.fpd-pr-rules {
+	height: 150px;
+	overflow: auto;
+}
+
+.fpd-pr-rules > .fpd-pr-rule {
+	padding: 5px 2px;
+	height: 45px;
+}
+
+.fpd-pr-rule:first-child {
+	padding-top: 0;
+}
+
+.fpd-pr-rule > * {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.fpd-pr-rule > .fpd-pr-rule-actions {
+	width: 50px;
+	line-height: 35px;
+	height: 100%;
+	font-size: 16px;
+	text-align: right;
+}
+
+.fpd-pr-rule-actions > span {
+	height: 100%;
+	display: inline-block;
+}
+
+.fpd-pr-rule-actions > .fpd-pr-rule-drag {
+	cursor: move;
+	margin-right: 10px;
+}
+
+.fpd-pr-rule-actions > .fpd-pr-rule-remove {
+	cursor: pointer;
+}
+
+.fpd-pr-rule .fpd-pr-rule-value {
+	width: calc(~"100% - 245px");
+}
+
+.fpd-pr-rule-value.fpd-two > * {
+	width: 49% !important;
+	margin-left: 1%;
+	display: inline-block;
+}
+
+.fpd-pr-rule > select {
+	width: 100px !important;
+}
+
+.fpd-pr-rule > input {
+	width: 80px !important;
+}
+
+.fpd-pr-rules > .ui-sortable-placeholder {
+	display: block;
+	padding: 20px;
+	border: 1px dashed @borderColor;
+
+}
+
+.fpd-pr-add-rule {
+	display: inline-block;
+	padding: 5px 8px;
+	font-size: 12px;
+	background: #434343;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+.fpd-pr-disabled {
+	opacity: 0.3;
+	pointer-events: none;
+}
